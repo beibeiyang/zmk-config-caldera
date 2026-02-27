@@ -1,0 +1,12 @@
+file_format: "1"
+id: caldera
+name: Caldera
+type: shield
+url: https://github.com/christianselig/caldera-keyboard
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - caldera_left
+  - caldera_right
