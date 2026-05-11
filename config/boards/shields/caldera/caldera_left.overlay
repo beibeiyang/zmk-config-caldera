@@ -18,3 +18,15 @@
         , <&gpio1 7 GPIO_ACTIVE_HIGH>
         ;
 };
+
+/ {
+    min_batt: min_batt {
+        compatible = "zmk,min-split-battery";
+        source = <&vbatt>;
+        status = "okay";
+    };
+
+    chosen {
+        zmk,battery = &min_batt;
+    };
+};
