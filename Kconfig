@@ -1,0 +1,4 @@
+config ZMK_MIN_SPLIT_BATTERY
+    bool "Report minimum battery level from split halves to host"
+    default y
+    depends on ZMK_BATTERY_REPORTING

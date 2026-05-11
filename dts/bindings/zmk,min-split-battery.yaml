@@ -1,0 +1,13 @@
+description: >
+  Virtual battery sensor that reports the minimum state-of-charge across
+  both halves of a split keyboard. Place only in the central (left) overlay.
+
+compatible: "zmk,min-split-battery"
+
+include: base.yaml
+
+properties:
+  source:
+    type: phandle
+    required: true
+    description: The real hardware battery sensor to read local SOC from.
