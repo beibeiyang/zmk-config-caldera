@@ -1,4 +1,6 @@
+DT_COMPAT_ZMK_MIN_SPLIT_BATTERY := zmk,min-split-battery
+
 config ZMK_MIN_SPLIT_BATTERY
     bool "Report minimum battery level from split halves to host"
-    default y
+    default $(dt_compat_enabled,$(DT_COMPAT_ZMK_MIN_SPLIT_BATTERY))
     depends on ZMK_BATTERY_REPORTING

@@ -105,6 +105,6 @@ static int min_split_battery_init(const struct device *dev) {
     };                                                                                             \
     DEVICE_DT_INST_DEFINE(n, &min_split_battery_init, NULL, NULL,                                 \
                           &min_split_battery_config_##n, POST_KERNEL,                              \
-                          CONFIG_SENSOR_INIT_PRIORITY + 1, &min_split_battery_api);
+                          91, &min_split_battery_api);
 
 DT_INST_FOREACH_STATUS_OKAY(MIN_SPLIT_BATTERY_INST)
