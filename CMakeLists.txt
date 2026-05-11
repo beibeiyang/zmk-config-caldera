@@ -1,4 +1,5 @@
 if(CONFIG_ZMK_MIN_SPLIT_BATTERY)
   zephyr_library()
   zephyr_library_sources(src/min_split_battery.c)
+  zephyr_library_include_directories(${APPLICATION_SOURCE_DIR}/include)
 endif()
